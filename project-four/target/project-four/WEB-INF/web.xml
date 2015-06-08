@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:jsp="http://java.sun.com/xml/ns/javaee/jsp" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>Archetype Created Web Application</display-name>
+  <welcome-file-list>
+    <welcome-file>/jsp/index.jsp</welcome-file>
+  </welcome-file-list>
+  <jsp-config>
+    <taglib>
+      <taglib-uri>roomhotel</taglib-uri>
+      <taglib-location>/WEB-INF/tld/room.tld</taglib-location>
+    </taglib>
+    <taglib>
+      <taglib-uri>ollordmanager</taglib-uri>
+      <taglib-location>/WEB-INF/tld/allorderonemanager.tld</taglib-location>
+    </taglib>
+    <taglib>
+      <taglib-uri>calendar</taglib-uri>
+      <taglib-location>/WEB-INF/tld/calendar.tld</taglib-location>
+    </taglib>
+    <taglib>
+      <taglib-uri>managerOr</taglib-uri>
+      <taglib-location>/WEB-INF/tld/managerorder.tld</taglib-location>
+    </taglib>
+    <taglib>
+      <taglib-uri>putorder</taglib-uri>
+      <taglib-location>/WEB-INF/tld/formorder.tld</taglib-location>
+    </taglib>
+    <taglib>
+      <taglib-uri>registuser</taglib-uri>
+      <taglib-location>/WEB-INF/tld/registr.tld</taglib-location>
+    </taglib>
+  </jsp-config>
+  <filter>
+    <filter-name>TypeClient</filter-name>
+    <filter-class>filterall.TypeClientCookie</filter-class>
+  </filter>
+  <filter>
+    <filter-name>MassageCustomer</filter-name>
+    <filter-class>filterall.MassageCustomer </filter-class>
+  </filter>
+  <filter>
+    <filter-name>ManagerOrder</filter-name>
+    <filter-class>filterall.ManagerOrder</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>MassageCustomer</filter-name>
+    <url-pattern>/jsp/customer.jsp</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>TypeClient</filter-name>
+    <url-pattern>/jsp/index.jsp</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>ManagerOrder</filter-name>
+    <url-pattern>/jsp/manager.jsp</url-pattern>
+  </filter-mapping>
+   <error-page>
+    <!-- Missing login -->
+    <error-code>401</error-code>
+    <location>/jsp/error.jsp</location>
+</error-page>
+<error-page>
+    <!-- Forbidden directory listing -->
+    <error-code>403</error-code>
+    <location>/jsp/error.jsp</location>
+</error-page>
+<error-page>
+    <!-- Missing resource -->
+    <error-code>404</error-code>
+    <location>/jsp/error.jsp</location>
+</error-page>
+<error-page>
+    <!-- Uncaught exception -->
+    <error-code>500</error-code>
+    <location>/jsp/error.jsp</location>
+</error-page>
+<error-page>
+    <!-- Unsupported servlet method -->
+    <error-code>503</error-code>
+    <location>/jsp/error.jsp</location>
+</error-page>
+<error-page>
+  <exception-type>java.lang.Throwable</exception-type>
+  <location>/jsp/error.jsp</location>
+</error-page>
+  
+</web-app>

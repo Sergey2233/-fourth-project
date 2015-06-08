@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<taglib
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+    version="2.1">
+
+	<tlib-version>1.0</tlib-version>
+	<short-name>order</short-name>
+	<uri>putorder</uri>
+	<tag>
+		<name>form</name>
+		<tag-class> jsp.tag.TagOrder</tag-class>
+		<body-content>empty</body-content>
+		
+		<attribute>
+		 <name> category</name>
+		 <required>true</required>
+		 <rtexprvalue> true </rtexprvalue>
+		</attribute>
+		<attribute>
+		 <name> phon</name>
+		 <required>true</required>
+		 <rtexprvalue> true </rtexprvalue>
+		</attribute>
+		<attribute>
+		 <name> arrival_date</name>
+		 <required>true</required>
+		 <rtexprvalue> true </rtexprvalue>
+		</attribute>
+		<attribute>
+		<name> date_of_depaerture</name>
+		 <required>true</required>
+		 <rtexprvalue> true </rtexprvalue>
+		</attribute>
+		<attribute>
+		<name> book</name>
+		 <required>true</required>
+		 <rtexprvalue> true </rtexprvalue>
+		</attribute>
+	</tag>
+</taglib>

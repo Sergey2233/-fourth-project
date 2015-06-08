@@ -1,0 +1,93 @@
+@CHARSET "UTF-8";
+
+#main {
+	text-align: center;
+	background-color: #b0c4de;
+	width: 70%;
+	
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#heder {
+	width: 100%;
+	height: 30%;
+}
+
+#hederMain {
+	width: 100%;
+	height: 15%;
+}
+
+#ansver {
+	background-color: #b0c4de;
+
+	width: 100%;
+	height: 100%;
+	/* visibility: hidden;*/
+	text-align: left;
+	margin-top: 5%;
+}
+
+#hederlog {
+	float: right;
+	height: 20%;
+	text-align: right;
+}
+
+body {
+	background-color: white;
+	width: 100%;
+
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+h1 {
+	color: blue;
+}
+
+#init{
+	float: left;
+	width: 30%;
+	height: 40%;
+	text-align: centre;
+}
+#tabl {
+	float: left;
+	width: 100%;
+	height: 100%;
+	text-align: left;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+
+
+#massage {
+	float: right;
+	width: 30%;
+	height: 40%;
+	text-align: centre;
+}
+
+.regist {
+	float: left;
+	text-align: right;
+}
+
+.log {
+	float: right;
+}
+
+#category {
+	float: top;
+	background-color: #b0c4de;
+	width: 100%;
+	height: 60%;
+	text-align: left;
+	margin-top: 10%;
+}
